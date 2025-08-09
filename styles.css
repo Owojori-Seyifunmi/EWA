@@ -266,12 +266,12 @@ img {
     
     .links {
         position: fixed;
-        top: 70px;
+        top: 0;
         right: 0;
         width: 70%;
-        height: calc(100vh - 70px);
+        height: 100vh;
         flex-direction: column;
-        background-color: var(--color-bg);
+        background-color: var(--color-white);
         padding: 30px;
         box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
         transform: translateX(100%);
@@ -287,8 +287,8 @@ img {
     }
     
     .image-container {
-        width: 120px;
-        height: 160px;
+        width: 125px;
+        height: 175px;
     }
     
     h1 {
@@ -302,11 +302,47 @@ img {
     }
     
     .image-container {
-        width: 100px;
-        height: 140px;
+        width: 125px;
+        height: 175px;
     }
     
     h1 {
         font-size: 1.8rem;
     }
+}
+
+/* Mobile hero image responsiveness */
+@media screen and (max-width: 750px) {
+  /* Remove side padding */
+  .hero-images {
+    padding-left: 5px;
+    padding-right: 5px;
+    justify-content: space-between;
+    width: 100%;
+    gap: 0;
+  }
+
+  /* Hide image 1 and image 5 */
+  .hero-images .image-container:nth-child(1),
+  .hero-images .image-container:nth-child(5) {
+    display: none;
+  }
+
+  /* Make remaining three fill width nicely */
+  .hero-images .image-container {
+    flex: 1;
+    max-width: calc(100% / 3);
+  }
+}
+.hero-images .img,
+.hero-images .video-wrapper {
+  width: 125px;
+  height: 175px;
+  
+}
+
+.hero-images .video-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
