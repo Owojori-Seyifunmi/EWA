@@ -252,7 +252,7 @@ img {
         flex-wrap: wrap;
         justify-content: center;
     }
-    
+
     .image-container {
         width: 160px;
         height: 200px;
@@ -263,7 +263,7 @@ img {
     .nav-toggle {
         display: block;
     }
-    
+
     .links {
         position: fixed;
         top: 0;
@@ -277,20 +277,20 @@ img {
         transform: translateX(100%);
         transition: var(--transition);
     }
-    
+
     .show-links {
         transform: translateX(0);
     }
-    
+
     .image-row {
         gap: 15px;
     }
-    
+
     .image-container {
         width: 125px;
         height: 175px;
     }
-    
+
     h1 {
         font-size: 2rem;
     }
@@ -300,14 +300,20 @@ img {
     .image-row {
         gap: 10px;
     }
-    
+
     .image-container {
         width: 125px;
         height: 175px;
     }
-    
+
     h1 {
         font-size: 1.8rem;
+    }
+    .hero {
+        margin-top: 250px;
+    }
+    .text-section {
+        margin-top: 5rem;
     }
 }
 
@@ -338,7 +344,7 @@ img {
 .hero-images .video-wrapper {
   width: 125px;
   height: 175px;
-  
+
 }
 
 .hero-images .video-wrapper iframe {
