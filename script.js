@@ -135,3 +135,83 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// PROGRAMS PATHWAYS
+
+document.addEventListener('DOMContentLoaded', function() {
+    const pathwayCards = document.querySelectorAll('.pathway-card');
+    const progressFill = document.querySelector('.progress-fill');
+    
+    pathwayCards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            if (this.classList.contains('beginner')) {
+                progressFill.style.width = '33.33%';
+            } else if (this.classList.contains('intermediate')) {
+                progressFill.style.width = '66.66%';
+            } else if (this.classList.contains('advanced')) {
+                progressFill.style.width = '100%';
+            }
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            progressFill.style.width = '33.33%';
+        });
+    });
+});
+
+
+// Manage program signups and calendar integration
+document.addEventListener('DOMContentLoaded', function() {
+    // Calendar modal functionality
+    const modal = document.getElementById('calendarModal');
+    const signupButtons = document.querySelectorAll('[data-signup]');
+    const closeModal = document.querySelector('.close-modal');
+    
+    // Open modal when clicking signup buttons
+    signupButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            const programId = this.getAttribute('data-signup');
+            modal.style.display = 'block';
+            // Here you would track which program they're signing up for
+        });
+    });
+    
+    // Close modal
+    closeModal.addEventListener('click', function() {
+        modal.style.display = 'none';
+    });
+    
+    // Calendar option buttons
+    const calendarOptions = document.querySelectorAll('.calendar-option');
+    calendarOptions.forEach(option => {
+        option.addEventListener('click', function() {
+            const calendarType = this.getAttribute('data-calendar');
+            // Implement calendar integration based on type
+            alert(`Adding to ${calendarType} calendar - this would integrate with real calendar APIs`);
+            modal.style.display = 'none';
+        });
+    });
+    
+    // Close modal when clicking outside
+    window.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+
+    // Countdown to next session (example functionality)
+    function updateCountdowns() {
+        document.querySelectorAll('.program-card').forEach(card => {
+            const nextDate = card.querySelector('.program-dates li')?.textContent;
+            if (nextDate) {
+                // Implement actual countdown logic here
+                const countdownElement = document.createElement('div');
+                countdownElement.className = 'countdown';
+                countdownElement.textContent = `Starts in 3 days 12:45:22`;
+                card.querySelector('.program-cta').prepend(countdownElement);
+            }
+        });
+    }
+    
+    updateCountdowns();
+});
