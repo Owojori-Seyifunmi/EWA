@@ -1419,6 +1419,8 @@ img {
     padding: 6rem 0;
     position: relative;
 }
+
+
 /* Title Underline Styles */
 .title-underline {
     margin: 1rem auto 1.5rem;
@@ -1636,6 +1638,7 @@ img {
 
 
 /* Upcoming Programs Section */
+
 .upcoming-programs {
     background-color: var(--color-white);
     padding: 6rem 0;
