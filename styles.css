@@ -1908,56 +1908,7 @@ img {
     text-decoration: underline;
 }
 
-/* CALENDAR MODAL START*/
-.calendar-modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.5);
-}
 
-.modal-content {
-    background-color: white;
-    margin: 15% auto;
-    padding: 2rem;
-    border-radius: 8px;
-    max-width: 500px;
-    position: relative;
-}
-
-.close-modal {
-    position: absolute;
-    top: 1rem;
-    right: 1.5rem;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
-
-.calendar-options {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin-top: 1.5rem;
-}
-
-.calendar-option {
-    padding: 1rem;
-    background: var(--color-off-white);
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-align: left;
-}
-
-.calendar-option:hover {
-    background: var(--color-gold);
-    color: white;
-}
 
 /* Responsive Design */
 @media (max-width: 900px) {
@@ -2047,70 +1998,6 @@ img {
     .title-underline {
         width: 90px;
     }
-}
-.proof-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin: 3rem auto;
-}
-
-.testimonial-card {
-    background: white;
-    border-radius: 12px;
-    padding: 2rem;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    display: flex;
-    gap: 1.5rem;
-    transition: transform 0.3s ease;
-}
-
-.testimonial-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-}
-
-.testimonial-avatar {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-size: cover;
-    background-position: center;
-    flex-shrink: 0;
-    border: 3px solid var(--color-gold);
-}
-
-.testimonial-quote {
-    font-style: italic;
-    color: var(--color-black);
-    line-height: 1.6;
-    margin-bottom: 1rem;
-    position: relative;
-}
-
-.testimonial-quote:before {
-    content: '"';
-    font-size: 3rem;
-    color: var(--color-gold);
-    opacity: 0.2;
-    position: absolute;
-    top: -20px;
-    left: -15px;
-}
-
-.testimonial-meta {
-    display: flex;
-    flex-direction: column;
-}
-
-.testimonial-name {
-    font-weight: 600;
-    color: var(--color-black);
-}
-
-.testimonial-result {
-    font-size: 0.9rem;
-    color: var(--color-gray);
 }
 
 .stories-cta {
