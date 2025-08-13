@@ -1,0 +1,359 @@
+/* SUCCESS STORIES PAGE STYLES */
+
+/* Success Hero Section */
+.success-hero {
+    background: linear-gradient(rgba(4, 24, 50, 0.8), rgba(4, 24, 50, 0.8)), 
+                url('images/cityscape-frankfurt-covered-modern-buildings-sunset-germany.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 12rem 0 6rem;
+    text-align: center;
+    position: relative;
+}
+
+.success-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.success-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.success-hero p {
+    font-size: 1.4rem;
+    opacity: 0.9;
+    margin-bottom: 3rem;
+}
+
+.scroll-indicator {
+    margin-top: 3rem;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Case Studies Section */
+.case-studies {
+    padding: 6rem 0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-subtitle {
+    font-size: 1rem;
+    color: var(--color-gold);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+    font-weight: 600;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--color-black);
+    margin: 0 auto;
+    line-height: 1.3;
+    max-width: 600px;
+}
+
+.case-study {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 6rem;
+}
+
+.case-study.reverse {
+    flex-direction: row-reverse;
+}
+
+.case-study-content {
+    flex: 1;
+}
+
+.case-study-image {
+    flex: 1;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.case-study-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.case-study-image:hover img {
+    transform: scale(1.05);
+}
+
+.case-study h3 {
+    font-size: 2rem;
+    color: var(--color-blue);
+    margin-bottom: 1.5rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.case-study-stats {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 1rem 2rem;
+    border: 1px solid var(--color-gold);
+    border-radius: 8px;
+}
+
+.stat-value {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--color-gold);
+}
+
+.stat-label {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--color-gray);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.case-study p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--color-gray);
+    margin-bottom: 2rem;
+}
+
+.property-gallery {
+    margin-top: 2rem;
+}
+
+.gallery-thumbnails {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.gallery-thumbnails img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gallery-thumbnails img:hover {
+    transform: translateY(-5px);
+}
+
+/* Testimonials Section */
+.success-testimonials {
+    padding: 6rem 0;
+    color: white;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.testimonial-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    color: var(--color-black);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+}
+
+.testimonial-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto 1.5rem;
+    border: 3px solid var(--color-gold);
+}
+
+.testimonial-quote {
+    font-style: italic;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.testimonial-quote:before {
+    content: '"';
+    position: absolute;
+    left: 0;
+    top: -0.5rem;
+    font-size: 3rem;
+    color: var(--color-gold);
+    opacity: 0.3;
+}
+
+.testimonial-meta {
+    text-align: center;
+}
+
+.testimonial-name {
+    font-weight: 600;
+    color: var(--color-blue);
+    display: block;
+}
+
+.testimonial-result {
+    font-size: 0.9rem;
+    color: var(--color-gray);
+    display: block;
+}
+
+/* CTA Section */
+.success-cta {
+    padding: 6rem 0;
+    background-color: var(--color-off-white);
+    text-align: center;
+}
+
+.cta-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.cta-content h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-blue);
+}
+
+.cta-content p {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    color: var(--color-gray);
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background-color: var(--color-gold);
+    color: white;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--color-blue);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.cta-button.secondary {
+    background-color: transparent;
+    border: 2px solid var(--color-gold);
+    color: var(--color-gold);
+}
+
+.cta-button.secondary:hover {
+    background-color: var(--color-gold);
+    color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .case-study {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .case-study.reverse {
+        flex-direction: column;
+    }
+    
+    .case-study-image {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .success-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .success-hero p {
+        font-size: 1.2rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .case-study-stats {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .success-hero {
+        padding: 8rem 0 4rem;
+    }
+    
+    .success-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .case-study h3 {
+        font-size: 1.6rem;
+    }
+}
