@@ -2,7 +2,7 @@
 .event-hero {
     background-color: var(--color-blue);
     color: white;
-    padding: 8rem 0 4rem;
+    padding: 12rem 0 4rem;
     position: relative;
     overflow: hidden;
 }
