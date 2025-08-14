@@ -159,3 +159,21 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+// Programme Tab Functionality
+const tabButtons = document.querySelectorAll('.tab-button');
+const programmeDays = document.querySelectorAll('.programme-day');
+
+tabButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        // Remove active class from all buttons and days
+        tabButtons.forEach(btn => btn.classList.remove('active'));
+        programmeDays.forEach(day => day.classList.remove('active'));
+        
+        // Add active class to clicked button
+        button.classList.add('active');
+        
+        // Show corresponding day content
+        const dayId = button.getAttribute('data-day');
+        document.getElementById(dayId).classList.add('active');
+    });
+});
