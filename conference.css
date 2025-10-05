@@ -1,0 +1,545 @@
+/* INTRODUCTION SECTION */
+.introduction-section {
+    background-color: var(--color-white);
+    padding: 6rem 0;
+}
+
+.introduction-content {
+    max-width: 1200px;
+    margin: 0 auto 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.intro-text {
+    padding-right: 2rem;
+}
+
+.intro-text p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: var(--color-gray);
+    margin-bottom: 1.5rem;
+}
+
+.intro-text p:last-child {
+    margin-bottom: 0;
+}
+
+.intro-highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.highlight-box {
+    background-color: var(--color-off-white);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid var(--color-light-gray);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: start;
+    gap: 1.5rem;
+}
+
+.highlight-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border-color: var(--color-gold);
+}
+
+.highlight-icon {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(170, 139, 72, 0.1);
+    border-radius: 50%;
+}
+
+.highlight-box h3 {
+    font-size: 1.2rem;
+    color: var(--color-blue);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+}
+
+.highlight-box p {
+    font-size: 1rem;
+    color: var(--color-gray);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.intro-cta {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .introduction-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .intro-text {
+        padding-right: 0;
+    }
+
+    .intro-text p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .introduction-section {
+        padding: 4rem 0;
+    }
+
+    .intro-text p {
+        font-size: 1rem;
+    }
+
+    .highlight-box {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    .highlight-icon {
+        margin: 0 auto;
+    }
+
+    .highlight-box h3 {
+        font-size: 1.1rem;
+    }
+}
+
+
+/* EVENT DETAILS SECTION */
+.event-details-section {
+    padding: 6rem 0;
+}
+
+.event-timeline {
+    max-width: 900px;
+    margin: 0 auto 4rem;
+}
+
+.timeline-item {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.timeline-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.timeline-time {
+    flex-shrink: 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color-gold);
+    font-family: "Poppins", sans-serif;
+    min-width: 120px;
+}
+
+.timeline-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: white;
+    font-weight: 600;
+}
+
+.timeline-content p {
+    line-height: 1.8;
+    opacity: 0.9;
+}
+
+.event-highlights-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 3rem;
+    border-radius: 12px;
+    margin-top: 4rem;
+}
+
+.event-highlights-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.highlight-point {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.highlight-point i {
+    color: var(--color-gold);
+    font-size: 1.2rem;
+}
+
+/* SPEAKERS SECTION */
+.speakers-section {
+    padding: 6rem 0;
+}
+
+.speakers-grid {
+    display: grid;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.speaker-card {
+    display: flex;
+    gap: 2rem;
+    background: var(--color-off-white);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.speaker-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.speaker-image {
+    flex-shrink: 0;
+    width: 180px;
+    height: 180px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.speaker-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.speaker-info h3 {
+    font-size: 1.6rem;
+    color: var(--color-blue);
+    margin-bottom: 0.5rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.speaker-title {
+    display: block;
+    color: var(--color-gold);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.speaker-info p {
+    color: var(--color-gray);
+    line-height: 1.7;
+}
+
+.speakers-value {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem;
+    background: rgba(170, 139, 72, 0.1);
+    border-radius: 12px;
+}
+
+.speakers-value p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: var(--color-gray);
+}
+
+/* AGENDA SECTION */
+.agenda-section {
+    padding: 6rem 0;
+}
+
+.agenda-flow {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.flow-item {
+    display: flex;
+    align-items: start;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.flow-number {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    background: var(--color-gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+.flow-content h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.flow-content p {
+    opacity: 0.9;
+    line-height: 1.7;
+}
+
+.flow-connector {
+    width: 2px;
+    height: 40px;
+    background: rgba(170, 139, 72, 0.3);
+    margin-left: 24px;
+    margin-bottom: 1rem;
+}
+
+.agenda-note {
+    max-width: 700px;
+    margin: 4rem auto 0;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-left: 3px solid var(--color-gold);
+    border-radius: 0 4px 4px 0;
+}
+
+.agenda-note p {
+    margin: 0;
+    opacity: 0.9;
+}
+
+/* PRICING SECTION */
+.pricing-section {
+    padding: 6rem 0;
+}
+
+.pricing-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.pricing-description p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: var(--color-gray);
+    margin-bottom: 1.5rem;
+}
+
+.pricing-card {
+    background: var(--color-off-white);
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--color-light-gray);
+}
+
+.price-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--color-gold);
+}
+
+.price-header h3 {
+    font-size: 1.5rem;
+    color: var(--color-blue);
+    margin-bottom: 1rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.price-amount {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--color-gold);
+    font-family: "Poppins", sans-serif;
+}
+
+.inclusions-list {
+    margin-bottom: 2rem;
+}
+
+.inclusions-list h4 {
+    font-size: 1.2rem;
+    color: var(--color-blue);
+    margin-bottom: 1rem;
+}
+
+.inclusions-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.inclusions-list li {
+    padding: 0.75rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--color-gray);
+}
+
+.inclusions-list i {
+    color: var(--color-gold);
+}
+
+.pricing-card .cta-button {
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+.limited-notice {
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--color-gray);
+    font-style: italic;
+}
+
+/* TAKEAWAYS SECTION */
+.takeaways-section {
+    padding: 6rem 0;
+}
+
+.takeaways-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.takeaway-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2.5rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(170, 139, 72, 0.2);
+}
+
+.takeaway-card:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-5px);
+}
+
+.takeaway-icon {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.takeaway-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.takeaway-card p {
+    opacity: 0.9;
+    line-height: 1.7;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 900px) {
+    .timeline-item {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .timeline-time {
+        min-width: auto;
+    }
+    
+    .speaker-card {
+        flex-direction: column;
+    }
+    
+    .speaker-image {
+        width: 100%;
+        height: 250px;
+    }
+    
+    .pricing-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .flow-item {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .flow-connector {
+        margin-left: 0;
+        width: 40px;
+        height: 2px;
+    }
+}
+
+@media (max-width: 600px) {
+    .event-details-section,
+    .speakers-section,
+    .agenda-section,
+    .pricing-section,
+    .takeaways-section {
+        padding: 4rem 0;
+    }
+    
+    .event-highlights-box {
+        padding: 2rem;
+    }
+    
+    .highlights-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .speaker-card {
+        padding: 1.5rem;
+    }
+    
+    .pricing-card {
+        padding: 2rem;
+    }
+    
+    .price-amount {
+        font-size: 2.5rem;
+    }
+    
+    .takeaways-grid {
+        grid-template-columns: 1fr;
+    }
+}
