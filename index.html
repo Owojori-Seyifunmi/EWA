@@ -668,17 +668,7 @@
     <script src="script.js"></script>
 
 
-    <script>
-  // Send height of page to parent (GHL)
-  function sendHeight() {
-    const height = document.body.scrollHeight;
-    parent.postMessage({ type: "setHeight", height: height }, "*");
-  }
-
-  // Send height on load and whenever page resizes
-  window.addEventListener("load", sendHeight);
-  window.addEventListener("resize", sendHeight);
-</script>
+    
 
 </body>
 </html>
