@@ -112,7 +112,7 @@
             <!-- CENTER COLUMN -->
             <div class="courses-center-column">
                 <div class="courses-image-wrapper">
-                    <img width="100%" height="100%"  src="images/Webinar 3.jpg" alt="">
+                    <img width="100%" height="100%"  src="images/october.png" alt="">
                 </div>
             </div>
 
@@ -480,6 +480,8 @@
         <div class="container">
             <div class="upcoming-header">
                 <h2 class="upcoming-subtitle">EXCLUSIVE EVENTS</h2>
+<br>
+                <h2 class="upcoming-subtitle">OCTOBER PRESENTATIONS</h2>
                 <svg class="title-underline" width="120" height="8" viewBox="0 0 120 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 4C0 4 20 -2 60 4C100 10 120 4 120 4" stroke="var(--color-gold)" stroke-width="2" stroke-linecap="round"/>
                 </svg>
@@ -489,7 +491,7 @@
                 <!-- Program Card 1 -->
                 <div class="program-card" data-program-id="webinar-1">
                     <div class="program-image">
-                        <img src="images/Webinar 3.jpg" alt="Social Housing Webinar">
+                        <img src="images/october.png" alt="Social Housing Webinar">
                         <div class="date-badge">Next: Aug 11</div>
                     </div>
                     <div class="program-content">
@@ -500,10 +502,8 @@
                             <div class="detail-column">
                                 <h4>Dates & Times:</h4>
                                 <ul class="program-dates">
-                                    <li>Monday 11th August – 19:00 BST</li>
-                                    <li>Saturday 16th August – 11:00 BST</li>
-                                    <li>Wednesday 20th August – 11:00 BST</li>
-                                    <li>Monday 25th August – 20:00 BST</li>
+                                    <li>Tuesday 15th October – 19:00 BST</li>
+                                    <li>Tuesday 29th October – 19:00 BST</li>
                                 </ul>
                             </div>
                             <div class="detail-column">
@@ -654,6 +654,15 @@
                 </div>
             </div>
         </div>
+
+        <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const ref = urlParams.get('ref');
+        if (ref) {
+            const input = document.querySelector('input[name=\"referrer\"]');
+            if (input) input.value = ref;
+        }
+        </script>
     </footer>
 
     <script src="script.js"></script>

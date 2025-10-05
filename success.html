@@ -68,8 +68,8 @@
                     <h3>Stockton-on-Tees</h3>
                     <div class="case-study-stats">
                         <div class="stat-item">
-                            <span class="stat-value">£28,000</span>
-                            <span class="stat-label">Annual Profit</span>
+                            <span class="stat-value">£120,000</span>
+                            <span class="stat-label">Gross Profit</span>
                         </div>
                         <div class="stat-item">
                             <span class="stat-value">12%</span>
@@ -93,8 +93,8 @@
                     <h3>Osmaston Road, Derby</h3>
                     <div class="case-study-stats">
                         <div class="stat-item">
-                            <span class="stat-value">£35,000</span>
-                            <span class="stat-label">Annual Profit</span>
+                            <span class="stat-value">£175,000</span>
+                            <span class="stat-label">Total Profit</span>
                         </div>
                         <div class="stat-item">
                             <span class="stat-value">15%</span>
@@ -126,8 +126,8 @@
                     <h3>Lomax House, Blackburn</h3>
                     <div class="case-study-stats">
                         <div class="stat-item">
-                            <span class="stat-value">£42,000</span>
-                            <span class="stat-label">Annual Profit</span>
+                            <span class="stat-value">£180,000</span>
+                            <span class="stat-label">Total Profit</span>
                         </div>
                         <div class="stat-item">
                             <span class="stat-value">18%</span>
@@ -151,8 +151,8 @@
                     <h3>Willenhall</h3>
                     <div class="case-study-stats">
                         <div class="stat-item">
-                            <span class="stat-value">£31,000</span>
-                            <span class="stat-label">Annual Profit</span>
+                            <span class="stat-value">£259,000</span>
+                            <span class="stat-label">Total Profit</span>
                         </div>
                         <div class="stat-item">
                             <span class="stat-value">14%</span>
@@ -252,6 +252,15 @@
                     <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
+
+            <script>
+  const urlParams = new URLSearchParams(window.location.search);
+  const ref = urlParams.get('ref');
+  if (ref) {
+    const input = document.querySelector('input[name=\"referrer\"]');
+    if (input) input.value = ref;
+  }
+</script>
         </div>
     </footer>
     <!-- FOOTER SECTION END -->
